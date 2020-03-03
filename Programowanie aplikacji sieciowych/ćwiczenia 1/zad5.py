@@ -5,7 +5,7 @@ for port in range(75, 85):
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.settimeout(1)
-        result = s.connect(("google.pl", port))
+        s.connect(("google.pl", port))
         print ("Git")
         s.close()
     except socket.error:
