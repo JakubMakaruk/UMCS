@@ -1,4 +1,6 @@
-## 1.
+```sh
+1.
+```
 
 **Gniazdo** - wirutalny interfejs służący do komunikacji między procesami. Gniazda możemy podejrzeć za pomocą komendy *netstat*. 
 
@@ -65,4 +67,6 @@ PYTHON
   > hostname = socket.gethostbyaddr("8.8.8.8")
   
   
-## 2.
+```sh
+2.
+```
