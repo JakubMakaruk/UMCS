@@ -1,3 +1,5 @@
+## 1.
+
 **Gniazdo** - wirutalny interfejs służący do komunikacji między procesami. Gniazda możemy podejrzeć za pomocą komendy *netstat*. 
 
 Dla przykładu - dwa kubki spięte sznurkiem, służące do komunikacji. Sznurek to protokół komunikacji.
@@ -61,6 +63,6 @@ PYTHON
   * *Pobranie hostname znając adres IP:*
   
   > hostname = socket.gethostbyaddr("8.8.8.8")
- 
- ```sh
- ```
+  
+  
+## 2.
