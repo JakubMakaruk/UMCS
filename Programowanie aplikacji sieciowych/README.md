@@ -1,3 +1,5 @@
+# 1.
+
 **Gniazdo** - wirutalny interfejs służący do komunikacji między procesami. Gniazda możemy podejrzeć za pomocą komendy *netstat*. 
 
 Dla przykładu - dwa kubki spięte sznurkiem, służące do komunikacji. Sznurek to protokół komunikacji.
@@ -61,4 +63,40 @@ PYTHON
   * *Pobranie hostname znając adres IP:*
   
   > hostname = socket.gethostbyaddr("8.8.8.8")
+  
+  
+# 2.
+Komunikacja
+- bezpołączeniowa(DGRAM) - wysoka wydajność, przesyłanie dużej liczby małych komunikatów, brak informowania strony wysyłającej o tym co stalo się z wysłaną wiadomościa, brak gwarancji, że adresat odbierze daną wiadomość. Komunikacja za pomocą konkretnego adresu pojedynczego adresata lub za pomocą trybu rozgłaszania w sieci(wiadomość wysyłana do wszystkich odbiorców w sieci, wpisanych na listę rozgłoszeniową - multicast/broadcast). Przykłady: DNS, DHCP, VOIP.
+- połączeniowa(STREAM strumieniowa) - polega na nawiązaniu sesji(logicznego połączenia) między dwiema stronami. Po nawiązaniu sesji przydzielany jest unikatowy numer. W ramach sesji wiadomości przesyłane są niezawodnie(ich zawartość i kolejność odbierania nie zostają naruszone). Dodatkowo jeżeli adresat nie odbierze wiadomości, strona wysyłająca informowana jest o zaistniałym błędzie(gwarancja dostarczenia). Przykłady: HTTP(S), SMTP, FTP. 
  
+ <br/> 
+ 
+Modyfikacje na pliku rozpoznajemy za pomocą rozpatrywania sumy kontrolnej. 
+
+ <br/> 
+ 
+**Model OSI**(stos OSI - wzorzec dla rodziny protokołów opisujący strukturę komunikacji sieciowej.
+| WARSTWA | ZADANIA |
+| ------- | ------- |
+| 7. aplikacji | świadczenie usług końcowych dla aplikacji/umożliwienie komunikację z użytkownikiem |
+| 6. prezentacji | przetwarzanie, tłumaczenie danych do postaci kanonicznej(standardowego formatu)/konwersja danych |
+| 5. sesji | kontrolowanie, nawiązywanie, zrywanie połączenia/odpowiedzialna za zarządzanie sesją/zarządzanie przebiegiem komunikacji |
+| 4. transportowa | transfer danych/dbanie o kolejność pakietów/sprawdzanie poprawności przesyłanych pakietów/integralność |
+| 3. sieciowa | ustanawianie, utrzymywanie i rozłączanie połączenia/wyznaczanie optymalnej trasy |
+| 2. łącza danych | niezawodność łącza danych/ustalanie metod wymiany ramek/difniowanie mechanizmów kontroli błędów/trasowanie pakietów |
+| 1. fizyczna | transmisja danych/przesyłanie bitów poprzez media sieciowe |
+ 
+ <br/>
+ 
+**Model TCP/IP** (stos TCP/IP) - zestaw protokołów internetowych. Odzwierciedla strukturę internetu.
+| WARSTWA | ZADANIA |
+| ------- | ------- |
+| 4. aplikacji | kodowanie, reprezentacja danych dla użytkownika |
+| 3. transportowa | odpowiedzialna za komunikację między urządzeniami/gwarancja pewności przesyłania danych/kierowanie informacji do odpowiednich aplikacji |
+| 2. internetowa | przetwarzanie datagramów z adresami IP/wyznaczanie optymalnej trasy |
+| 1. dostępu do sieci | przekazywanie danych przez fizyczne połączenia urządzeń/kontrolowanie urządzeń fizycznych i media |
+
+<p align="center">
+ <img src="https://egzamin-e13.pl/wp-content/uploads/2015/11/iso1-1024x682.png" alt="zdj" height="400px">
+</p>
