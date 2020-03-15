@@ -1,0 +1,9 @@
+Zapisać do pliku "plik":
+a) informacje o procesorze: lscpu >> plik
+b) informacje o jądrze: uname -r >> plik
+c) nazwę aktualnie zalogowanego użytkownika: whoami >> plik
+d) katalog domowy użytkownika: echo $HOME >> plik
+
+lub można to wszystko zrobić za pomocą jednej komendy:
+(lscpu && uname -r && whoami && echo $HOME) > plik
+
