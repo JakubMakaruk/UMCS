@@ -11,7 +11,7 @@ zalogowanego użytkownika oraz katalog domowy użytkownika.
 
 ------
 
-**3.** Napisz skrypt w pliku o nazwie info.sh, który będzie wyświetlał informacje o działającym
+**3.** Napisz skrypt, który będzie wyświetlał informacje o działającym
 systemie. Program ma mieć następującą funkcjonalność:
   - wyświetlanie informacji o wolnej przestrzeni dyskowej;
   - wyświetlanie informacji o wolnej pamięci ram;
