@@ -26,3 +26,14 @@
   > odwołując się do przykładu Student-Stanowisko, np. klasa **Student** potrzebuje klasy **Komputer**. Student ma wskaźnik na dany Komputer i może wywołać metodę klasy Komputer(np. użyj()), natomiast Komputer nie musi posiadać Studenta, żeby wywołać swoją metodę.
  <img src="https://github.com/JakubMakaruk/UMCS/blob/master/Inzynieria%20oprogramowania/%C4%87wiczenia2/zdj/zaleznosc.png"> 
  
+* #### *Agregacja*
+  > jedna klasa zawiera w swojej strukturze obiekt drugiej klasy. <br/>
+  > np. **Bukiet** zawiera w sobie **Kwiaty**, inaczej mówiąc **Bukiet** zawiera w sobie kontener **Kwiatów**
+  > <img src="https://github.com/JakubMakaruk/UMCS/blob/master/Inzynieria%20oprogramowania/%C4%87wiczenia2/zdj/agregacja.png">
+  
+* #### *Kompozycja*
+  > szczególny przypadek agregacji, <br/>
+  > jedna klasa nie może istnieć bez drugiej. <br/>
+  > np. człowiek - serce(jak nie ma serca to nie ma człowieka) lub samochód - silnik. <br/>
+  > zazwyczaj dotyczy to stałej liczby elementów, np. jedno serce, jeden silnik
+  <img src="https://github.com/JakubMakaruk/UMCS/blob/master/Inzynieria%20oprogramowania/%C4%87wiczenia2/zdj/kompozycja.png">
