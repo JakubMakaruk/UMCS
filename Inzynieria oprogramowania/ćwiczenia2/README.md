@@ -37,3 +37,5 @@
   > np. człowiek - serce(jak nie ma serca to nie ma człowieka) lub samochód - silnik. <br/>
   > zazwyczaj dotyczy to stałej liczby elementów, np. jedno serce, jeden silnik
   <img src="https://github.com/JakubMakaruk/UMCS/blob/master/Inzynieria%20oprogramowania/%C4%87wiczenia2/zdj/kompozycja.png">
+<br/>
+W pliku ćw2.mdj znajduje się model wykonany w StarUML przedstawiający prosty schemat, w którym wykorzystano każdy typ relacji(praca domowa).
