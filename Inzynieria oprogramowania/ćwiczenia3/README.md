@@ -28,6 +28,8 @@ Występują trzy rodzaje komunikatów między obiektami:
 * **loop** - definiujący pętlę typu **for**(o określonej z góry liczbie iteracji) lub **while**(wykonywanej dopóki pewien warunek jest prawdziwy),
 * **break** - wykonanie fragmentu i zakończenie interakcji.
 
+<br/>
+
 Przykład:
 <img src="https://github.com/JakubMakaruk/UMCS/blob/master/Inzynieria%20oprogramowania/%C4%87wiczenia3/diagsekw%C4%87w2.png">
 Przeciwnik opcjonalnie wykonuje Atak Odwetowy(tylko wtedy gdy Gracz zaatakuje go wywołując metodę "przyjmijObrazenia().
