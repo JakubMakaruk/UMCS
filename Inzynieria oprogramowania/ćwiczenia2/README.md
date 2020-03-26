@@ -38,4 +38,4 @@
   > zazwyczaj dotyczy to stałej liczby elementów, np. jedno serce, jeden silnik
   <img src="https://github.com/JakubMakaruk/UMCS/blob/master/Inzynieria%20oprogramowania/%C4%87wiczenia2/zdj/kompozycja.png">
 <br/>
-W pliku ćw1.mdj znajduje się model wykonany w StarUML przedstawiający prosty schemat(do obejrzenia w pliku ćw2.png), w którym wykorzystano każdy typ relacji(praca domowa).
+W pliku ćw1.mdj znajduje się model wykonany w StarUML przedstawiający prosty schemat(do obejrzenia w pliku ćw1.png), w którym wykorzystano każdy typ relacji(praca domowa).
