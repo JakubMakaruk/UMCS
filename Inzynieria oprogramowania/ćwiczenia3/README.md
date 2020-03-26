@@ -30,6 +30,6 @@ Występują trzy rodzaje komunikatów między obiektami:
 
 <br/>
 
-Przykład:
+Przykład: <br/>
 <img src="https://github.com/JakubMakaruk/UMCS/blob/master/Inzynieria%20oprogramowania/%C4%87wiczenia3/diagsekw%C4%87w2.png">
 Przeciwnik opcjonalnie wykonuje Atak Odwetowy(tylko wtedy gdy Gracz zaatakuje go wywołując metodę "przyjmijObrazenia().
