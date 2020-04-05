@@ -1,0 +1,18 @@
+telnet poczta.interia.pl 587
+
+ehlo ja
+
+auth login
+amFrdWIubWFrYXJ1a0BnbWFpbC5jb20=
+HASLO DO KONTA ZAKODOWANE W BASE64 ;]
+MAIL FROM: <jakub.makaruk@interia.pl>
+RCPT TO: <jakub.makaruk@gmail.com>
+
+DATA
+To: <jakub.makaruk@gmail.com>
+From: <jakub.makaruk@interia.pl>
+Subject: Siema
+		
+Siema to ja ;]
+.
+QUIT
