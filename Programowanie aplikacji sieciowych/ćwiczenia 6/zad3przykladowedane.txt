@@ -1,0 +1,19 @@
+przyk³adowe dane wejœciowe:
+
+ehlo ja
+auth login
+amFrdWIubWFrYXJ1a0BpbnRlcmlhLnBs #czyli jakub.makaruk@interia.pl zakodowane w base64
+MTIzNDU= #czyli 12345 -> haslo
+
+MAIL FROM: jakubmakaruk
+RCPT TO: ktosinny
+DATA
+TO: ktosinny
+FROM: ja
+SUBJECT: Temat
+trescwiadomosci pierwsza linijka
+druga linijka
+.
+QUIT
+
+(nie wklejaæ, bo Ÿle wczyta!)
