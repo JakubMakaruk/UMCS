@@ -1,6 +1,6 @@
 # Fasada
 
-Jest to wzorzec strukturalny. Celem tego wzorca jest uproszczenie korzystania z pewnego systemu poprzez prostszy interfejs. Zazwyczaj implementuje się ją za pomocąjednej klasy, która jest powiązana z innymi klasami. Fasada można powiedzieć, że ukrywa pewną część systemu. </br>
+Jest to wzorzec strukturalny. Celem tego wzorca jest uproszczenie korzystania z pewnego systemu poprzez prostszy interfejs. Zazwyczaj implementuje się ją za pomocąjednej klasy, która jest powiązana z innymi klasami. Fasada można powiedzieć, że ukrywa pewną część systemu. </br> </br>
 **Przykłady:**
 </br>
 **1.** Klient chce wypłacić pieniądze z bankomatu. W tym celu wystarczy, że użyje tylko jednej metody "wypłaćPieniądze" zamiast wielu innych typu - uruchomienia silnika, kasety na banknoty. Co więcej klient używając poszczególnych metod ingerowałby w działanie bankomatu. Mógłby wywoływać metody, które nie powinny być dla niego dostępne, bo mógłby na przykład wypłacić więcej pieniędzy niż by chciał. </br>
