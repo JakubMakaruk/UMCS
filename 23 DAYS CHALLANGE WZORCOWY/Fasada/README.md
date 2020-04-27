@@ -22,4 +22,4 @@ Fasada służy do ukrycia szczegółów(złożoności) pewnego systemu przed kli
  <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Fasada/zdj/main2.png" alt="zdj" height="400px">
 </p>
 </br>
-Przed użytkownikiem schowana jest cała złożoność komputera. Użytkownik chce tylko włączyć komputer. Więc wywołuje tylko jedną metodę "Uruchom", bez zaglądania do środka komputera.
+Przed użytkownikiem schowana jest cała złożoność komputera. Użytkownik chce tylko włączyć komputer, więc wywołuje tylko jedną metodę "Uruchom", bez zaglądania do środka komputera i uruchamiania poszczególnych komponentów pojedynczo.
