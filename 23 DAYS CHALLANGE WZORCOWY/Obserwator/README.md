@@ -1,14 +1,14 @@
 # Obserwator
 
-Jest to wzorzec czynnościowym. We wzorcu tym wyróżniamy dwa typy obiektów jakimi są:
+Jest to wzorzec czynnościowy. We wzorcu tym wyróżniamy dwa typy obiektów jakimi są:
 - **obserwowany**(ang. observable),
 - **obserwator**(ang. observer). 
 
 Obserwowany to obiekt, o którym chcemy pozyskiwać informacje o jego działanich(np. zmiana położenia w grze RPG). Obserwator natomiast to obiekt, który czeka na powiadomienie o wykonanych działaniach obserwowanego.
-Głównym celem tego wzorca jest powiadamianie zainteresowanych obiektów o zmianie stanu głównego, obserwowanego obiektu. </br>
+Głównym celem tego wzorca jest powiadamianie zainteresowanych obiektów o zmianie stanu głównego, obserwowanego obiektu. </br></br>
 **Przykłady:**
 </br>
-**1.** Przykład z gry RPG, w której mamy główną postać oraz potwory. Potwory domyślnie przyjmują stan pokojowy, natomiast gdy w ich określonym okręgu(liczenie dystansów położenia) pojawi się nasz bohater, wówczas stają się one agresywne i zaczynają atakować naszego bohatera. Potwory czekają na powiadomienia gdy bohater gry zmieni swoje położenie.
+**1.** Gra RPG, w której mamy główną postać oraz potwory. Potwory domyślnie przyjmują stan pokojowy, natomiast gdy w ich określonym okręgu(liczenie dystansów położenia) pojawi się nasz bohater, wówczas stają się one agresywne i zaczynają atakować naszego bohatera. Potwory czekają na powiadomienia gdy bohater gry zmieni swoje położenie.
 
 ### Przykładowy diagram:
 <p align="center">
