@@ -1,6 +1,6 @@
 # Obserwator
 
-Jest to wzorzec czynnościowym. We wzorcu tym wyróżniamy dwa typy obiektów jakimi są:
+Jest to wzorzec czynnościowy. We wzorcu tym wyróżniamy dwa typy obiektów jakimi są:
 - **obserwowany**(ang. observable),
 - **obserwator**(ang. observer). 
 
