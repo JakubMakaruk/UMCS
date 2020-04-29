@@ -329,6 +329,7 @@
 											"top": 184,
 											"width": 207.009765625,
 											"height": 13,
+											"underline": true,
 											"text": "-instancja: HistoriaPrzegladarki",
 											"horizontalAlignment": 0
 										}
@@ -923,6 +924,7 @@
 							},
 							"name": "instancja",
 							"visibility": "private",
+							"isStatic": true,
 							"type": {
 								"$ref": "AAAAAAFxww5PbYbsUhc="
 							}
