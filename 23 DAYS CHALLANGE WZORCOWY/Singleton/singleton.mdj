@@ -380,6 +380,7 @@
 											"top": 222,
 											"width": 207.009765625,
 											"height": 13,
+											"underline": true,
 											"text": "+getInstance(): HistoriaPrzegladarki",
 											"horizontalAlignment": 0
 										},
@@ -944,6 +945,7 @@
 								"$ref": "AAAAAAFxww5PbYbsUhc="
 							},
 							"name": "getInstance",
+							"isStatic": true,
 							"parameters": [
 								{
 									"_type": "UMLParameter",
