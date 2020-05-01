@@ -1,6 +1,6 @@
 # Metoda wytwórcza
 
-Jest to wzorzec konstrukcyjny. Używa się go do określenia intrefejsu w celu tworzenia obiektów. Podklasy zajmują się tworzeniem obiektów. We wzorcu występują dwie ogólne klasy lub interfejsy, które definiują typ zasobów (Producty) oraz sposób ich tworzenia (Creator).
+Jest to wzorzec konstrukcyjny. Używa się go do określenia intrefejsu w celu tworzenia obiektów. Podklasy zajmują się tworzeniem obiektów. We wzorcu występują dwie ogólne klasy lub interfejsy, które definiują typ zasobów (Product) oraz sposób ich tworzenia (Creator).
 Wzorzec ten stosuje się, gdy:
 - w klasie nie można z góry ustalić wszystkich klas obiektów, które trzeba stworzyć(istnieje możliwość rozbudowy systemu o dodatkowe klasy),
 - chcemy zachować zasadę Open/Closed Principle(SOLID).
