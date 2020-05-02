@@ -1,25 +1,23 @@
-# Fasada
+# Dekorator
 
-Jest to wzorzec strukturalny. Celem tego wzorca jest uproszczenie korzystania z pewnego systemu poprzez prostszy interfejs. Zazwyczaj implementuje się ją za pomocąjednej klasy, która jest powiązana z innymi klasami. Fasada można powiedzieć, że ukrywa pewną część systemu. </br> </br>
+Jest to wzorzec strukturalny. Stosuje się go gdy chcemy dodawać nowe funkcje do istniejących klas dynamicznie podczas działania programu. Dynamicznie dołącza dodatkowe obowiązki do obiektu. Wzorzec ten opakowuje oryginalną klasę w nową klasę "dekorującą". 
+"Dekoratory są alternatywą dla dziedziczenia. Dziedziczenie rozszerza zachowanie klasy w trakcie kompilacji, w przeciwieństwie do dekoratorów, któe rozszerzają klasy w czasie działania programu." </br> </br>
 **Przykłady:**
 </br>
-**1.** Klient chce wypłacić pieniądze z bankomatu. W tym celu wystarczy, że użyje tylko jednej metody "wypłaćPieniądze" zamiast wielu innych typu - uruchomienia silnika, kasety na banknoty. Co więcej klient używając poszczególnych metod ingerowałby w działanie bankomatu. Mógłby wywoływać metody, które nie powinny być dla niego dostępne, bo mógłby na przykład wypłacić więcej pieniędzy niż by chciał. </br>
-**2.** Użytkownik chce włączyć komputer. W tym celu wystarczy, że użyje tylko jednej metody "uruchom", zamiast grzebać w komputerze i uruchamiać poszczególne komponenty osobno - plyta glowna, procesor, karta graficzna itd.
-Fasada służy do ukrycia szczegółów(złożoności) pewnego systemu przed klientem.
+**1.** Aplikacja tworzenia własnej pizzy. Za każdym razem gdy chcemy dodać składnik do pizzy(udekorować pizzę) wywołujemy konstruktor na obiekcie Pizza już istniejącym. W ten sposób dokładamy kolejne funkcje do głównej instancji klasy(w tym przypadku składniki do głównej pizzy) </br>
+**2.** Aplikacja wybierania obiadu z pojedynczych składników. Przykład zbliżony do przedstawionego wyżej. Tworzymy pełny obiad składający się z poszczególnych składników(ziemniaki, mięso, surówki). Podstawowy obiad rozszerzamy o kolejne składniki. Najpierw tworzymy obiad składający się z samych ziemniaków, później do ziemniaków dodajemy mięso, a następnie surówkę.
 
 ### Przykładowy diagram:
 <p align="center">
- <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Fasada/zdj/fasada.png" alt="zdj">
+ <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Dekorator/zdj/diagram.png" alt="zdj">
 </p>
 
 ### Główna część programu wygląda następująco:
 <p align="left">
- <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Fasada/zdj/main1.png" alt="zdj">
+ <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Dekorator/zdj/main1.png" alt="zdj">
 </p>
 
 ### Wynik działania programu:
 <p align="left">
- <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Fasada/zdj/main2.png" alt="zdj">
+ <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Dekorator/zdj/main2.png" alt="zdj">
 </p>
-</br>
-Przed użytkownikiem schowana jest cała złożoność komputera. Użytkownik chce tylko włączyć komputer, więc wywołuje tylko jedną metodę "Uruchom", bez zaglądania do środka komputera i uruchamiania poszczególnych komponentów pojedynczo.
