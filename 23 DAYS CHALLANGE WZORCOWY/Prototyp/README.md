@@ -1,6 +1,6 @@
 # Prototyp
 
-Jest to wzorzec kreacyjny. Celem wzorca jest umożliwienie tworzenia obiektów określonej klasy lub na podstawie prototypowego egzemplarza. Wzorzec Prototyp skupia się na klonowaniu obiektów. Gdy stwierdzimy, że po stworzeniu pierwszej instancji danej klasy, kolejne będą podobne, wówczas używamy metody do klonowania obiektów. </br></br>
+Jest to wzorzec kreacyjny. Celem wzorca jest umożliwienie tworzenia obiektów określonej klasy na podstawie prototypowego egzemplarza. Wzorzec Prototyp skupia się na klonowaniu obiektów. Gdy stwierdzimy, że po stworzeniu pierwszej instancji danej klasy, kolejne będą podobne, wówczas używamy metody do klonowania obiektów. </br></br>
 **Przykłady:**
 </br>
 **1.** System tworzenia Pizzy. Wyobraźmy sobie pizzerię, w której kucharz na początku zawsze tworzy standardową pizzę(margherita). Wszystkie inne pizze są takie same(zawierają podstawową wersję - margheritę), z tą różnicą, że mogą zawierać dodatki. W takiej sytuacji, aby stworzyć wszystkie inne pizze możemy skorzystać z prototypu, dzięki któremu stworzymy podstawową wersję dla każdej pizzy, a następnie dla każdej pizzy możemy wywoływać metody typu dodajSzynke(), dodajPapryke(), aby dodać wszystkie składniki dla poszczególnych rodzajów pizzy. </br>
