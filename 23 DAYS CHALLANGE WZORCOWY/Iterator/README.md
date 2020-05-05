@@ -24,3 +24,13 @@ Jest to wzorzec czynnościowy projektowy. Zapewnia sekwencyjny dostęp do elemen
 <p align="left">
  <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Iterator/zdj/main3.png" alt="zdj">
 </p>
+
+### Dodawanie obiadów:
+<p align="left">
+ <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Iterator/zdj/dodawanie.png" alt="zdj">
+</p>
+
+### Główna część Iteratora:
+<p align="left">
+ <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Iterator/zdj/glownyiterator.png" alt="zdj">
+</p>
