@@ -1,25 +1,22 @@
-# Fasada
+# Adapter
 
-Jest to wzorzec strukturalny. Celem tego wzorca jest uproszczenie korzystania z pewnego systemu poprzez prostszy interfejs. Zazwyczaj implementuje się ją za pomocąjednej klasy, która jest powiązana z innymi klasami. Fasada można powiedzieć, że ukrywa pewną część systemu. </br> </br>
+Jest to wzorzec strukturalny, projektowy. Jego użycie umożliwia współpracę dwóm klasom o niekompatybilnych interfejsach. Przekształca interfejs jednej z klas na interfejs drugiej klasy. Opakowuje stary interfejs w nowy. </br> </br>
 **Przykłady:**
 </br>
-**1.** Klient chce wypłacić pieniądze z bankomatu. W tym celu wystarczy, że użyje tylko jednej metody "wypłaćPieniądze" zamiast wielu innych typu - uruchomienia silnika, kasety na banknoty. Co więcej klient używając poszczególnych metod ingerowałby w działanie bankomatu. Mógłby wywoływać metody, które nie powinny być dla niego dostępne, bo mógłby na przykład wypłacić więcej pieniędzy niż by chciał. </br>
-**2.** Użytkownik chce włączyć komputer. W tym celu wystarczy, że użyje tylko jednej metody "uruchom", zamiast grzebać w komputerze i uruchamiać poszczególne komponenty osobno - plyta glowna, procesor, karta graficzna itd.
-Fasada służy do ukrycia szczegółów(złożoności) pewnego systemu przed klientem.
+**1.** System zarządzania kablami do połączenia monitora z komputerem. Za pomocą jednego kabla można użyć adaptera, który umożliwi połączenie tego kabla z nowszą technologią. Niżej jest przedstawiony przykład, gdzie występują dwie klasy VGA oraz HDMI, a także klasa Adapter, dzięki której istnieje współpraca, aby wyświetlić obraz. </br>
+**2.** System odczytywania plików. Możliwa jest sytuacja, gdzie stary dokument Worda może być niekompatybilny z najnowszymi wersjami. Innymi słowy, istnieje możliwość, że plik zapisany w Word 2003 nie może być odczytany w Word 2017. W tej sytuacji można użyć interfejsu.
 
 ### Przykładowy diagram:
 <p align="center">
- <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Fasada/zdj/fasada.png" alt="zdj">
+ <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Adapter/zdj/diagram.png" alt="zdj">
 </p>
 
 ### Główna część programu wygląda następująco:
 <p align="left">
- <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Fasada/zdj/main1.png" alt="zdj">
+ <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Adapter/zdj/main1.png" alt="zdj">
 </p>
 
 ### Wynik działania programu:
 <p align="left">
- <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Fasada/zdj/main2.png" alt="zdj">
+ <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Adapter/zdj/main2.png" alt="zdj">
 </p>
-</br>
-Przed użytkownikiem schowana jest cała złożoność komputera. Użytkownik chce tylko włączyć komputer, więc wywołuje tylko jedną metodę "Uruchom", bez zaglądania do środka komputera i uruchamiania poszczególnych komponentów pojedynczo.
