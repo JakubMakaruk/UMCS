@@ -17,7 +17,7 @@ public class Main {
         System.out.println("");
 
         // Tommy planuje akcje, Paulie i Sam zbieraja haracz.
-        Polecenie [] tablica_rozkazow = {new ZaplanujAkcje(cz1), new ZbierajHaracz(cz2), new ZbierajHaracz(cz2)};
+        Polecenie [] tablica_rozkazow = {new ZaplanujAkcje(cz1), new ZbierajHaracz(cz2), new ZbierajHaracz(cz3)};
         Robota robota = new Robota(tablica_rozkazow);
 
         szef.setPolecenie(robota);
@@ -25,5 +25,6 @@ public class Main {
         szef.wycofaj();
     }
 }
+
 
 
