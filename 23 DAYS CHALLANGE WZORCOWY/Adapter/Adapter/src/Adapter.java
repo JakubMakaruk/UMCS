@@ -1,13 +1,17 @@
 public class Adapter implements VGA_Interface, HDMI_Interface {
-    HDMI kabel = new HDMI();
+    HDMI_Interface hdmi=null;
+
+    public Adapter(HDMI_Interface w) {
+        hdmi = w;
+    }
 
     @Override
     public void wyswietlHDMI() {
-        kabel.wyswietlHDMI();
+        hdmi.wyswietlHDMI();
     }
 
     @Override
     public void wyswietlVGA() {
-        kabel.wyswietlHDMI();
+        hdmi.wyswietlHDMI();
     }
 }
