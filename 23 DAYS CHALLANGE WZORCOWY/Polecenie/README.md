@@ -8,7 +8,7 @@ Jest to wzorzec projektowy. Celem wzorca jest hermetyzacja(enkapsulacja) danych 
 - odbiorca - obiekt pobierający i wykonujący polecenia. 
 
 **Przykłady:** </br>
-**1.** Pierwszy przykład jest związany z jedną z moich ulubionych gier - Mafia: The city of Lost Heaven. Gra opowiada o przestępczym życiu mafijnym. Wybrałem trzech członków mafii, które w tej grze występują, m.in. Tommy, Paul oraz Sam, którzy wchodzą w skład rodziny należącej do Szefa Mafii - Don Salieri. Członkowie Mafii wykonują polecenia, które zostały im narzucone przez szefa tj. "zbieranie haraczu" oraz "planowanie akcji". Dodatkowo zaimplementowałem klasę Robota, w której znajduje się tablica rozkazów dla poszczególnych członków. </br>
+**1.** Pierwszy przykład jest związany z jedną z moich ulubionych gier - Mafia: The city of Lost Heaven. Gra opowiada o przestępczym życiu mafijnym. Wybrałem trzech członków mafii, którzy w tej grze występują, m.in. Tommy, Paul oraz Sam, którzy wchodzą w skład rodziny należącej do Szefa Mafii - Don Salieri. Członkowie Mafii wykonują polecenia, które zostały im narzucone przez szefa tj. "zbieranie haraczu" oraz "planowanie akcji". Dodatkowo zaimplementowałem klasę Robota, w której znajduje się tablica rozkazów dla poszczególnych członków. </br>
 **2.** Klub piłkarski. Trener jest obiektem, który przekazuje polecenia do odbiorców - piłkarzów. Możliwe polecenia, które mogłyby się znaleźć w takim systemie to np. "trenujStrzelanie", "trenujBieganie", "trenujDrybling".
 
 ### Przykładowy diagram:
