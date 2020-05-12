@@ -1,4 +1,4 @@
-# Fasada
+# Mediator
 
 Jest to wzorzec projektowy. Za pomocą tego wzorca zapewnia się zmniejszoną ilość powiązań między klasami(ponieważ to Mediator jako jedyny zna większość pracujących ze sobą obiektów), a także daje jednolity interfejs do przesyłania wiadomości pomiędzy obiektami klas. Mediator to jedyna klasa, która zna wszystkie metody innych klas(tych, którymi zarządza). Pozostałe klasy nie muszą nic o sobie wiedzieć, a jedynie przesyłają polecenia mediatorowi, który rozsyła je do odpowiednich adresatów. </br> </br>
 **Przykłady:**
