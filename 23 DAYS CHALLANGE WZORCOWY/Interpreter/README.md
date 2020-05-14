@@ -3,7 +3,7 @@
 Jest to wzorzec projektowy. Wzorzec ten można wykorzystać w celu zdefiniowania pewnego zapisu i stworzenie dla niego interpretera. Gdy zdanie zapisane jest w pewnym interpretowalnym języku, może być reprezentowane jako drzewo składniowe. Istnieje pewna gramatyka opisująca ten język. Ogólnie mówiąc wzorzec dotyczy ewaluowania wyrażeń pewnego języka. </br> </br>
 **Przykłady:**
 </br>
-**1.** Kalkulator ONP(Infix to Postfix) - w takim kalkulatorze wymagane jest interpretowanie wyrażeń zapisanych w odwrotnej notacji polskiej oraz sprawdzenie poprawności reguł. Przykład przedstawiony jest poniżej w formie diagramu oraz kodu.
+**1.** Kalkulator ONP(Infix to Postfix) - w takim kalkulatorze wymagane jest interpretowanie wyrażeń zapisanych w odwrotnej notacji polskiej oraz sprawdzenie poprawności reguł. Przykład przedstawiony jest poniżej w formie diagramu oraz kodu z uwzględnieniem tylko dodawania oraz odejmowania.
 
 ### Przykładowy diagram:
 <p align="center">
