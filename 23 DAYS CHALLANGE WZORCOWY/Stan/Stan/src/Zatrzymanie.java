@@ -1,7 +1,6 @@
 public class Zatrzymanie implements Stan {
-    public void dzialaj(Kontroler k) {
-        k.setStan(this);
-        System.out.println("Gracz jest w stanie: ZATRZYMANIE SIE");
+    public void dzialaj() {
+        System.out.println("Gracz sie zatrzymal, nic sie nie dzieje.");
     }
 
     public String getNazwaStanu() {

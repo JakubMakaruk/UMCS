@@ -12,4 +12,8 @@ public class Kontroler {
     public Stan getStan() {
         return maszyna;
     }
+
+    public void akcja() {
+        maszyna.dzialaj();
+    }
 }

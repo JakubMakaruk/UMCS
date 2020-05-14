@@ -3,14 +3,16 @@ public class Main {
         Kontroler kontroler = new Kontroler();
 
         Chodzenie chodzenie = new Chodzenie();
-        chodzenie.dzialaj(kontroler);
+        kontroler.setStan(chodzenie);
         System.out.println(kontroler.getStan().getNazwaStanu());
+        kontroler.akcja();
 
         System.out.println();
 
         Zatrzymanie zatrzymanie = new Zatrzymanie();
-        zatrzymanie.dzialaj(kontroler);
+        kontroler.setStan(zatrzymanie);
         System.out.println(kontroler.getStan().getNazwaStanu());
+        kontroler.akcja();
     }
 }
 

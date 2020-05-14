@@ -1,4 +1,4 @@
 public interface Stan {
-    public void dzialaj(Kontroler k);
+    public void dzialaj();
     public String getNazwaStanu();
 }

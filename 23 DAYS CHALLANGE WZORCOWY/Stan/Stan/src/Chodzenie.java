@@ -1,7 +1,6 @@
 public class Chodzenie implements Stan {
-    public void dzialaj(Kontroler k) {
-        k.setStan(this);
-        System.out.println("Gracz jest w stanie: CHODZENIE");
+    public void dzialaj() {
+        System.out.println("Gracz idzie przed siebie!");
     }
 
     public String getNazwaStanu() {
