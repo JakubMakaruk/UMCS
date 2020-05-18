@@ -1,4 +1,4 @@
-# Flyweight(pyłek?)
+# Flyweight(pyłek)
 
 Jest to wzorzec projektowy. Celem wzorca jest zmniejszenie wykorzystywania pamięci. Podczas tworzenia nowego obiektu, najpierw sprawdzane jest czy taki egzemplarz o tych parametrach już istnieje w pamięci. Jeżeli istnieje, wówczas pobieramy go. W przeciwnym wypadku tworzymy nowy obiekt. Wzorzec przydatny w aplikacjach korzystających z większej liczby identycznych obiektów. </br> </br>
 **Przykłady:**
