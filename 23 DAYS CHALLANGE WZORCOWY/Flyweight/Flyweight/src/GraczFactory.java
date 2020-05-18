@@ -1,11 +1,11 @@
 import java.util.*;
 public class GraczFactory {
-    private static HashMap<String, Gracz> mapaKwadratow = new HashMap<String, Gracz>();
+    private static HashMap<String, Gracz> mapaGraczy = new HashMap<String, Gracz>();
 
     public static Gracz getPlayer(String typ) {
         Gracz g = null;
-        if(mapaKwadratow.containsKey(typ))
-            g = mapaKwadratow.get(typ);
+        if(mapaGraczy.containsKey(typ))
+            g = mapaGraczy.get(typ);
         else
         {
             switch (typ) {
@@ -18,7 +18,7 @@ public class GraczFactory {
                     g = new Terrorysta();
                     break;
             }
-            mapaKwadratow.put(typ, g);
+            mapaGraczy.put(typ, g);
         }
         return g;
     }

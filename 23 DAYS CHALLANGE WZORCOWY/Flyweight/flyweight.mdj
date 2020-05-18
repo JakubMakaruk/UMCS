@@ -743,7 +743,7 @@
 											"width": 255.05517578125,
 											"height": 13,
 											"underline": true,
-											"text": "-mapaKwadratow: HashMap<String, Gracz>",
+											"text": "-mapaGraczy: HashMap<String, Gracz>",
 											"horizontalAlignment": 0
 										}
 									],
@@ -1980,7 +1980,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFyKL5IayE+wyg="
 							},
-							"name": "mapaKwadratow",
+							"name": "mapaGraczy",
 							"visibility": "private",
 							"isStatic": true,
 							"type": "HashMap<String, Gracz>"
