@@ -1,25 +1,37 @@
-# Fasada
+# Wizytator(Odwiedzający, Visitor)
 
-Jest to wzorzec strukturalny. Celem tego wzorca jest uproszczenie korzystania z pewnego systemu poprzez prostszy interfejs. Zazwyczaj implementuje się ją za pomocąjednej klasy, która jest powiązana z innymi klasami. Fasada można powiedzieć, że ukrywa pewną część systemu. </br> </br>
+Wzorzec projektowy, którego celem jest dodawanie nowych funkcjonalności/operacji do istniejącego obiektu, bez konieczności modyfikowania klasy, na których obiekt operuje. Wiąże się to z regułą open/closed(projektowanie w taki sposób, żeby nie trzeba było wprowadzać modyfikacje do już istniejącego kodu, nad którym pracowaliśmy i zakończyliśmy operowanie). Klasa Wizytator powinna mieć przeciążoną metodę visit() w zależności od argumentu, w którym pojawia się inna klasa obiektu. Są to różne wersje tej samej operacji/algorytmu. Natomiast klasy, na których Wizytator będzie oddziałowywać powinny posiadać w swojej strukturze metodę accept(Visitor), która sprowadza się do wywołania visitor.visit(this). </br> </br>
 **Przykłady:**
 </br>
-**1.** Klient chce wypłacić pieniądze z bankomatu. W tym celu wystarczy, że użyje tylko jednej metody "wypłaćPieniądze" zamiast wielu innych typu - uruchomienia silnika, kasety na banknoty. Co więcej klient używając poszczególnych metod ingerowałby w działanie bankomatu. Mógłby wywoływać metody, które nie powinny być dla niego dostępne, bo mógłby na przykład wypłacić więcej pieniędzy niż by chciał. </br>
-**2.** Użytkownik chce włączyć komputer. W tym celu wystarczy, że użyje tylko jednej metody "uruchom", zamiast grzebać w komputerze i uruchamiać poszczególne komponenty osobno - plyta glowna, procesor, karta graficzna itd.
-Fasada służy do ukrycia szczegółów(złożoności) pewnego systemu przed klientem.
+**1.** Uruchamianie komputera, gdzie poniżej jest to bardziej przedstawione. Główna klasa CzescKomputeraWizytator posiada cztery wersje metody visit, w zależności od argumentu. Wiąże się to także z tym, że klasy na których ten Wizytator operuje posiadają metodę accept(CzescKomputeraWizytator), gdzie w ostateczności następuje wywołanie wizytator.visit(this).
 
 ### Przykładowy diagram:
 <p align="center">
- <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Fasada/zdj/fasada.png" alt="zdj">
+ <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Wizytator/zdj/diagram.png" alt="zdj">
 </p>
 
 ### Główna część programu wygląda następująco:
 <p align="left">
- <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Fasada/zdj/main1.png" alt="zdj">
+ <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Wizytator/zdj/main1.png" alt="zdj">
 </p>
 
 ### Wynik działania programu:
 <p align="left">
- <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Fasada/zdj/main2.png" alt="zdj">
+ <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Wizytator/zdj/main2.png" alt="zdj">
 </p>
-</br>
-Przed użytkownikiem schowana jest cała złożoność komputera. Użytkownik chce tylko włączyć komputer, więc wywołuje tylko jedną metodę "Uruchom", bez zaglądania do środka komputera i uruchamiania poszczególnych komponentów pojedynczo.
+
+### Główna, ważna klasa Komputer, gdzie odbywa się odwiedzenie wszystkich części komputera:
+<p align="left">
+ <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Wizytator/zdj/main3.png" alt="zdj">
+</p>
+
+### Poszczególne części komputera:
+<p align="left">
+ <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Wizytator/zdj/klawiatura.png" alt="zdj">
+</p>
+<p align="left">
+ <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Wizytator/zdj/myszka.png" alt="zdj">
+</p>
+<p align="left">
+ <img src="https://github.com/JakubMakaruk/UMCS/blob/master/23%20DAYS%20CHALLANGE%20WZORCOWY/Wizytator/zdj/monitor.png" alt="zdj">
+</p>
