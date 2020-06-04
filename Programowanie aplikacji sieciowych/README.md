@@ -1,5 +1,3 @@
-# 1.
-
 **Gniazdo** - wirutalny interfejs służący do komunikacji między procesami. Gniazda możemy podejrzeć za pomocą komendy *netstat*. 
 
 Dla przykładu - dwa kubki spięte sznurkiem, służące do komunikacji. Sznurek to protokół komunikacji.
@@ -65,7 +63,6 @@ PYTHON
   > hostname = socket.gethostbyaddr("8.8.8.8")
   
   
-# 2.
 Komunikacja
 - bezpołączeniowa(DGRAM) - wysoka wydajność, przesyłanie dużej liczby małych komunikatów, brak informowania strony wysyłającej o tym co stalo się z wysłaną wiadomościa, brak gwarancji, że adresat odbierze daną wiadomość. Komunikacja za pomocą konkretnego adresu pojedynczego adresata lub za pomocą trybu rozgłaszania w sieci(wiadomość wysyłana do wszystkich odbiorców w sieci, wpisanych na listę rozgłoszeniową - multicast/broadcast). Przykłady: DNS, DHCP, VOIP.
 - połączeniowa(STREAM strumieniowa) - polega na nawiązaniu sesji(logicznego połączenia) między dwiema stronami. Po nawiązaniu sesji przydzielany jest unikatowy numer. W ramach sesji wiadomości przesyłane są niezawodnie(ich zawartość i kolejność odbierania nie zostają naruszone). Dodatkowo jeżeli adresat nie odbierze wiadomości, strona wysyłająca informowana jest o zaistniałym błędzie(gwarancja dostarczenia). Przykłady: HTTP(S), SMTP, FTP. 
