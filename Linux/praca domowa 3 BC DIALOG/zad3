@@ -1,0 +1,42 @@
+#!/bin/sh
+
+exec 3>&1
+co=$(dialog --title "ZADANIE 4" --menu "Na czym beda wykonywane operacje" 10 40 3 1 Foldery 2 Pliki 2>&1 1>&3)
+wybor=$(dialog --title "ZADANIE 4" --menu "Wybierz operacje" 10 40 3 1 Utworzenie 2 Usuwanie 3 Kopiowanie 4 Przenoszenie 2>&1 1>&3)
+
+sciezka=$(dialog --title "Podaj sciezke" --fselect $HOME/ 10 40 2>&1 1>&3)
+
+if [ "$co" -eq 1 ]; then
+	case "$wybor" in
+		"1") mkdir -p $sciezka
+			;;
+		"2") rm -r $sciezka
+			;;
+		"3") gdzie=$(dialog --title "Gdzie skopiowac?" --fselect $HOME/ 10 40 2>&1 1>&3)
+			#mkdir -p $gdzie - gdyby uzytkownik wpisal do sciezki GDZIE - "root/Folder" to by tylko utworzylo Folder, ale nie skopiowaloby tam plikow, przy wpisaniu "root/Folder/" mkdir nie jest potrzebny
+			cp -r $sciezka $gdzie
+			;;
+		"4") gdzie=$(dialog --title "Gdzie przeniesc?" --fselect $HOME/ 10 40 2>&1 1>&3)
+			mkdir -p $gdzie
+			mv -f $sciezka $gdzie
+			;;
+	esac
+
+else
+	case "$wybor" in
+		"1") nazwa=$(dialog --title "Podaj nazwe pliku" --inputbox "" 8 60 2>&1 1>&3)
+			touch $sciezka/$nazwa
+			;;
+		"2") rm $sciezka
+			;;
+		"3") nazwa=$(dialog --title "Podaj nazwe pliku" --inputbox "" 8 60 2>&1 1>&3)
+			gdzie=$(dialog --title "Gdzie skopiowac?" --fselect $HOME/ 8 60 2>&1 1>&3)
+			cp $sciezka $gdzie/$nazwa
+			;;
+		"4") gdzie=$(dialog --title "Gdzie przeniesc?" --fselect $HOME/ 8 60 2>&1 1>&3)
+			mv -f $sciezka $gdzie
+			;;
+	esac
+fi
+
+exec 3>&-

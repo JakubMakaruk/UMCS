@@ -1,0 +1,19 @@
+#!/bin/sh
+# $Id: inputbox,v 1.11 2010/01/13 10:06:01 tom Exp $
+
+. ./setup-vars
+
+. ./setup-tempfile
+
+$DIALOG --title "ZADANIE 1" \
+        --inputbox "Podaj nazwe nowego pliku:" 10 50 2> $tempfile
+
+sciezka=`cat $tempfile`
+
+(lscpu && uname -r && whoami && echo $HOME) > $sciezka
+
+
+#Wybrałem inputboxa, ponieważ jest najprostszy do zrozumienia według mnie. 
+#Do Inputboxa użytkownik wprowadza nazwę dla nowo tworzonego pliku w którym zostaną zapisane informacje.
+#Kazał Pan wybrać przykładowy skrypt z podanych przez Pana przykładów, więc zostawiam wywołanie ./setup-vars oraz ./setup-tempfile
+#Gdyby okazałoby się, że przez to mogę stracić punkty to - oba wywołania należy usunąć, $tempfile zamienić na "temp.txt", sciezka=`cat temp.txt`

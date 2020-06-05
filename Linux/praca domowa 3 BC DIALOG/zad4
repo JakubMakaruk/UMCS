@@ -1,0 +1,44 @@
+#!/bin/sh
+
+temp=/tmp/menu.sh.$$
+
+dialog --title "ZADANIE 4" \
+	--menu "Co mam obliczyc?" 10 30 3 1 Wielomian 2 LiczbaPI 3 ZlotaLiczba 2>$temp
+
+wybor=`cat $temp`
+
+case $wybor in
+	1)
+		exec 3>&1
+		skala=$(dialog --inputbox "Podaj skale dokladnosci:" 10 40 2>&1 1>&3)
+		a=$(dialog --inputbox "Podaj a:" 10 40 2>&1 1>&3)
+		b=$(dialog --inputbox "Podaj b:" 10 40 2>&1 1>&3)
+		c=$(dialog --inputbox "Podaj c:" 10 40 2>&1 1>&3)
+		exec 3>&1
+		delta=`echo $b^2-4*$a*$c | bc`
+		if [ $delta -eq 0 ]; then
+			echo "Jedyne miejsce zerowe"
+			echo "scale=$skala; -$b/(2*$a)" | bc
+		elif [ $delta -gt 0 ]; then
+			echo "Pierwsze miejsce zerowe:"
+			echo "scale=$skala; (-$b-sqrt($delta))/(2*$a)" | bc
+			echo "Drugie miejsce zerowe:"
+			echo "scale=$skala; (-$b+sqrt($delta))/(2*$a)" | bc
+		else
+			echo "Brak miejsc zerowych!"
+		fi
+		;;
+	2)
+		exec 3>&1
+		skala=$(dialog --inputbox "Podaj skale dokladnosci:" 10 40  2>&1 1>&3)
+		exec 3>&-
+		echo "$skala"
+		echo "scale=$skala; 4*a(1)" | bc -l
+		;;
+	3)
+		exec 3>&1
+		skala=$(dialog --inputbox "Podaj skale dokladnosci:" 10 40 2>&1 1>&3)
+		exec 3>&-
+		echo "scale=$skala; (sqrt(5)+1)/2" | bc
+		;;
+esac
